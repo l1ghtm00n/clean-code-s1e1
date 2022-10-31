@@ -139,15 +139,16 @@ button{
 
 .task-list__menu-item > .task-list__input {
   width: 226px;
+  display: none;
 }
 
-.task-list__button_delete img {
+.task-list__button_delete .task-list__remove {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.task-list__button_delete img:hover {
+.task-list__button_delete .task-list__remove:hover {
   transform: rotateZ(0);
 }
 
@@ -158,9 +159,6 @@ button{
 }
 
 /* Edit Task */
-ul li .task-list__input {
-  display: none;
-}
 
 .task-list__menu-item_edit-mode .task-list__input {
   display: inline-block;
